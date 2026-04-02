@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WPM Gest\u00e3o Interna \u2014 Documenta\u00e7\u00e3o do Projeto</title>
+<title>WPM Gestão Interna — Documentação do Projeto</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -46,7 +46,7 @@
     pointer-events:none;
   }
 
-  /* \u2500\u2500 SIDEBAR \u2500\u2500 */
+  /* ── SIDEBAR ── */
   .sidebar {
     position: fixed; left: 0; top: 0; bottom: 0; width: 260px;
     background: rgba(10,10,14,0.95);
@@ -83,10 +83,10 @@
   .nav-item.active { background:var(--yellow-dim); color:var(--yellow); border:1px solid var(--yellow-glow); }
   .nav-item .nav-icon { width:18px; height:18px; display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0; }
 
-  /* \u2500\u2500 MAIN \u2500\u2500 */
+  /* ── MAIN ── */
   .main { margin-left: 260px; min-height: 100vh; position: relative; z-index: 1; }
 
-  /* \u2500\u2500 HERO \u2500\u2500 */
+  /* ── HERO ── */
   .hero {
     padding: 72px 64px 56px;
     border-bottom: 1px solid var(--glass-border);
@@ -108,7 +108,7 @@
   .hero-meta-label { font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--text-dim); text-transform:uppercase; }
   .hero-meta-value { font-size:14px; font-weight:600; color:var(--text); }
 
-  /* \u2500\u2500 CONTENT \u2500\u2500 */
+  /* ── CONTENT ── */
   .content { padding: 0 64px 80px; }
   .section { padding: 64px 0; border-bottom: 1px solid var(--glass-border); }
   .section:last-child { border-bottom: none; }
@@ -117,7 +117,7 @@
   .section-title { font-size:32px; font-weight:800; color:var(--text); line-height:1.1; letter-spacing:-0.02em; margin-bottom:12px; }
   .section-desc { font-size:15px; color:var(--text-muted); max-width:640px; line-height:1.6; }
 
-  /* \u2500\u2500 CARDS \u2500\u2500 */
+  /* ── CARDS ── */
   .card {
     background:var(--glass); border:1px solid var(--glass-border); border-radius:16px;
     padding:28px 32px; position:relative; overflow:hidden;
@@ -131,12 +131,12 @@
   .card-teal { border-left: 3px solid var(--teal); }
   .card-orange { border-left: 3px solid var(--orange); }
 
-  /* \u2500\u2500 GRIDS \u2500\u2500 */
+  /* ── GRIDS ── */
   .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
   .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
   .grid-4 { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px; }
 
-  /* \u2500\u2500 TYPOGRAPHY \u2500\u2500 */
+  /* ── TYPOGRAPHY ── */
   h2 { font-size:22px; font-weight:700; color:var(--text); margin-bottom:16px; letter-spacing:-0.01em; }
   h3 { font-size:16px; font-weight:700; color:var(--text); margin-bottom:10px; }
   h4 { font-size:13px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
@@ -145,18 +145,18 @@
   strong { color:var(--text); font-weight:600; }
   code { font-family:'JetBrains Mono',monospace; font-size:12px; background:rgba(255,255,255,.07); border:1px solid var(--glass-border); border-radius:4px; padding:2px 6px; color:var(--yellow); }
 
-  /* \u2500\u2500 STAT GRID \u2500\u2500 */
+  /* ── STAT GRID ── */
   .stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
   .stat-item { background:var(--glass); border:1px solid var(--glass-border); border-radius:16px; padding:28px 24px; text-align:center; }
   .stat-value { font-size:42px; font-weight:900; color:var(--yellow); font-family:'JetBrains Mono',monospace; line-height:1; margin-bottom:8px; }
   .stat-label { font-size:11px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em; }
 
-  /* \u2500\u2500 TECH PILLS \u2500\u2500 */
+  /* ── TECH PILLS ── */
   .tech-pills { display:flex; gap:8px; flex-wrap:wrap; }
   .tech-pill { display:inline-flex; align-items:center; background:var(--glass); border:1px solid var(--glass-border); border-radius:6px; padding:5px 12px; font-size:12px; font-weight:600; color:var(--text-muted); }
   .tech-pill.primary { background:var(--yellow-dim); border-color:var(--yellow-glow); color:var(--yellow); }
 
-  /* \u2500\u2500 TIMELINE \u2500\u2500 */
+  /* ── TIMELINE ── */
   .timeline { position:relative; padding-left:32px; }
   .timeline::before { content:''; position:absolute; left:10px; top:0; bottom:0; width:1px; background:linear-gradient(180deg,var(--yellow-glow),transparent); }
   .timeline-item { position:relative; padding-bottom:32px; }
@@ -175,7 +175,7 @@
   .timeline-title { font-size:15px; font-weight:600; color:var(--text); }
   .timeline-desc { font-size:13px; color:var(--text-muted); line-height:1.6; margin-top:4px; }
 
-  /* \u2500\u2500 MODULE CARDS \u2500\u2500 */
+  /* ── MODULE CARDS ── */
   .module-card { background:var(--glass); border:1px solid var(--glass-border); border-radius:12px; padding:20px 22px; transition:border-color .15s; }
   .module-card:hover { border-color:rgba(255,255,255,.15); }
   .module-icon { font-size:22px; margin-bottom:10px; }
@@ -183,7 +183,7 @@
   .module-desc { font-size:12px; color:var(--text-muted); line-height:1.55; }
   .module-tag { display:inline-block; background:var(--yellow-dim); border:1px solid var(--yellow-glow); color:var(--yellow); border-radius:4px; padding:2px 7px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-top:10px; }
 
-  /* \u2500\u2500 LESSONS \u2500\u2500 */
+  /* ── LESSONS ── */
   .lesson { background:var(--glass); border:1px solid var(--glass-border); border-radius:12px; padding:20px 24px; margin-bottom:16px; border-left:3px solid var(--glass-border); }
   .lesson.success { border-left-color:var(--green); }
   .lesson.warning { border-left-color:var(--orange); }
@@ -192,13 +192,13 @@
   .lesson-title { font-size:14px; font-weight:700; color:var(--text); margin-bottom:8px; }
   .lesson-text { font-size:13px; color:var(--text-muted); line-height:1.6; margin:0; }
 
-  /* \u2500\u2500 RULE BLOCKS \u2500\u2500 */
+  /* ── RULE BLOCKS ── */
   .rule-block { background:var(--glass); border:1px solid var(--glass-border); border-radius:10px; padding:16px 20px; margin-bottom:12px; display:flex; gap:14px; align-items:flex-start; }
   .rule-num { width:26px; height:26px; background:var(--yellow-dim); border:1px solid var(--yellow-glow); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--yellow); flex-shrink:0; margin-top:1px; font-family:'JetBrains Mono',monospace; }
   .rule-title { font-size:14px; font-weight:700; color:var(--text); margin-bottom:4px; }
   .rule-text { font-size:13px; color:var(--text-muted); line-height:1.55; margin:0; }
 
-  /* \u2500\u2500 AUDIT TABLE \u2500\u2500 */
+  /* ── AUDIT TABLE ── */
   .audit-table { width:100%; border-collapse:collapse; font-size:13px; }
   .audit-table th { text-align:left; font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--text-dim); text-transform:uppercase; padding:10px 14px; border-bottom:1px solid var(--glass-border); }
   .audit-table td { padding:12px 14px; border-bottom:1px solid rgba(255,255,255,.03); color:var(--text-muted); vertical-align:top; }
@@ -206,13 +206,13 @@
   .audit-table td:first-child { font-family:'JetBrains Mono',monospace; color:var(--text); font-size:12px; white-space:nowrap; }
   .check-yes { color:var(--green); font-weight:700; font-size:14px; }
 
-  /* \u2500\u2500 STACK \u2500\u2500 */
+  /* ── STACK ── */
   .stack-layer { background:var(--glass); border:1px solid var(--glass-border); border-radius:12px; padding:18px 24px; margin-bottom:10px; display:flex; align-items:center; gap:16px; }
   .stack-icon { width:38px; height:38px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
   .stack-name { font-size:14px; font-weight:700; color:var(--text); }
   .stack-role { font-size:12px; color:var(--text-muted); margin-top:2px; }
 
-  /* \u2500\u2500 FOOTER \u2500\u2500 */
+  /* ── FOOTER ── */
   .footer { border-top:1px solid var(--glass-border); padding:40px 64px; display:flex; align-items:center; justify-content:space-between; background:rgba(0,0,0,.3); }
   .footer-brand { font-size:16px; font-weight:800; color:var(--yellow); margin-bottom:4px; }
   .footer-credit { font-size:12px; color:var(--text-dim); }
@@ -220,7 +220,7 @@
   .footer-version { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text-dim); }
   .footer-date { font-size:12px; color:var(--text-dim); margin-top:2px; }
 
-  /* \u2500\u2500 MISC \u2500\u2500 */
+  /* ── MISC ── */
   .divider { height:1px; background:linear-gradient(90deg,transparent,var(--glass-border),transparent); margin:32px 0; }
   .hl { color:var(--yellow); font-weight:600; }
   .hl-green { color:var(--green); font-weight:600; }
@@ -228,20 +228,20 @@
   .hl-blue { color:var(--blue); font-weight:600; }
   .hl-purple { color:var(--purple); font-weight:600; }
 
-  /* \u2500\u2500 SCROLLBAR \u2500\u2500 */
+  /* ── SCROLLBAR ── */
   ::-webkit-scrollbar{width:6px;height:6px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:rgba(255,194,15,.2);border-radius:3px} ::-webkit-scrollbar-thumb:hover{background:rgba(255,194,15,.4)}
 
-  /* \u2500\u2500 CURSOR \u2500\u2500 */
+  /* ── CURSOR ── */
   *{cursor:none!important}
   #cur-dot{position:fixed;width:6px;height:6px;background:var(--yellow);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:width .2s,height .2s}
   #cur-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(255,194,15,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;will-change:transform}
   #cur-ring.h{width:50px;height:50px;border-color:rgba(255,194,15,.9);background:rgba(255,194,15,.04)}
   #cur-ring.c{width:24px;height:24px}
 
-  /* \u2500\u2500 PROGRESS BAR \u2500\u2500 */
+  /* ── PROGRESS BAR ── */
   #prog{position:fixed;top:0;left:260px;right:0;height:2px;background:linear-gradient(to right,var(--yellow),rgba(255,194,15,.3));z-index:300;box-shadow:0 0 8px rgba(255,194,15,.5);transition:width .1s linear}
 
-  /* \u2500\u2500 SCROLL REVEAL \u2500\u2500 */
+  /* ── SCROLL REVEAL ── */
   .rv{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.23,1,.32,1),transform .8s cubic-bezier(.23,1,.32,1)}
   .rv.on{opacity:1;transform:translateY(0)}
   .rv-l{opacity:0;transform:translateX(-32px);transition:opacity .8s cubic-bezier(.23,1,.32,1),transform .8s cubic-bezier(.23,1,.32,1)}
@@ -250,13 +250,13 @@
   .rv-s.on{opacity:1;transform:scale(1)}
   .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
 
-  /* \u2500\u2500 HERO PREMIUM \u2500\u2500 */
+  /* ── HERO PREMIUM ── */
   .hero{position:relative;overflow:hidden}
   .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(255,194,15,.05),transparent 70%);pointer-events:none}
   #hero-canvas{position:absolute;inset:0;pointer-events:none;z-index:0}
   .hero>*{position:relative;z-index:1}
 
-  /* \u2500\u2500 SIDEBAR GLOW \u2500\u2500 */
+  /* ── SIDEBAR GLOW ── */
   .sidebar{box-shadow:4px 0 40px rgba(0,0,0,.5)}
   .sidebar-logo .badge{transition:box-shadow .3s,border-color .3s}
   .sidebar-logo .badge:hover{box-shadow:0 0 20px rgba(255,194,15,.15);border-color:rgba(255,194,15,.4)}
@@ -265,7 +265,7 @@
   .nav-item.active::before{height:60%}
   .nav-item:hover{background:var(--glass-hover);color:var(--text);transform:translateX(2px)}
 
-  /* \u2500\u2500 CARDS GLOW \u2500\u2500 */
+  /* ── CARDS GLOW ── */
   .card{transition:border-color .35s,box-shadow .35s,transform .3s;position:relative;overflow:hidden}
   .card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,194,15,.05),transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
   .card:hover{border-color:rgba(255,255,255,.14);box-shadow:0 8px 40px rgba(0,0,0,.4),0 0 0 1px rgba(255,194,15,.06);transform:translateY(-3px)}
@@ -277,52 +277,52 @@
   .card-blue:hover{box-shadow:0 8px 40px rgba(59,130,246,.08)}
   .card-teal:hover{box-shadow:0 8px 40px rgba(20,184,166,.08)}
 
-  /* \u2500\u2500 MODULE CARDS \u2500\u2500 */
+  /* ── MODULE CARDS ── */
   .module-card{transition:border-color .35s,box-shadow .35s,transform .3s}
   .module-card:hover{border-color:rgba(255,194,15,.3);box-shadow:0 6px 30px rgba(255,194,15,.07);transform:translateY(-4px)}
 
-  /* \u2500\u2500 STAT ITEMS \u2500\u2500 */
+  /* ── STAT ITEMS ── */
   .stat-item{transition:border-color .35s,box-shadow .35s,transform .3s}
   .stat-item:hover{border-color:rgba(255,194,15,.25);box-shadow:0 0 30px rgba(255,194,15,.07);transform:translateY(-2px)}
   .stat-value{text-shadow:0 0 30px rgba(255,194,15,.3)}
 
-  /* \u2500\u2500 TIMELINE DOTS \u2500\u2500 */
+  /* ── TIMELINE DOTS ── */
   .timeline-dot.stable{box-shadow:0 0 10px rgba(34,197,94,.5)}
   .timeline-dot.milestone{box-shadow:0 0 14px rgba(255,194,15,.7)}
   .timeline-dot.regression{box-shadow:0 0 10px rgba(239,68,68,.5)}
   .timeline-dot.recovery{box-shadow:0 0 10px rgba(249,115,22,.5)}
 
-  /* \u2500\u2500 LESSONS \u2500\u2500 */
+  /* ── LESSONS ── */
   .lesson{transition:border-color .35s,box-shadow .35s}
   .lesson:hover{box-shadow:0 4px 24px rgba(0,0,0,.3)}
   .lesson.success:hover{box-shadow:0 0 30px rgba(34,197,94,.07)}
   .lesson.warning:hover{box-shadow:0 0 30px rgba(249,115,22,.07)}
   .lesson.info:hover{box-shadow:0 0 30px rgba(59,130,246,.07)}
 
-  /* \u2500\u2500 SECTION DIVIDER \u2500\u2500 */
+  /* ── SECTION DIVIDER ── */
   .section{position:relative}
   .section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,194,15,.2),transparent);pointer-events:none}
 
-  /* \u2500\u2500 TECH PILLS \u2500\u2500 */
+  /* ── TECH PILLS ── */
   .tech-pill{transition:border-color .2s,box-shadow .2s,color .2s}
   .tech-pill:hover{border-color:rgba(255,194,15,.4);box-shadow:0 0 12px rgba(255,194,15,.08);color:var(--yellow)}
   .tech-pill.primary:hover{box-shadow:0 0 16px rgba(255,194,15,.15)}
 
-  /* \u2500\u2500 STACK LAYERS \u2500\u2500 */
+  /* ── STACK LAYERS ── */
   .stack-layer{transition:border-color .3s,box-shadow .3s,transform .2s}
   .stack-layer:hover{border-color:rgba(255,255,255,.14);box-shadow:0 4px 20px rgba(0,0,0,.3);transform:translateX(4px)}
 
-  /* \u2500\u2500 FOOTER GLOW \u2500\u2500 */
+  /* ── FOOTER GLOW ── */
   .footer{position:relative}
   .footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:80%;height:1px;background:linear-gradient(to right,transparent,rgba(255,194,15,.2),transparent)}
 
-  /* \u2500\u2500 VERSION TAGS \u2500\u2500 */
+  /* ── VERSION TAGS ── */
   .version-tag{transition:box-shadow .2s}
   .version-tag.stable:hover{box-shadow:0 0 10px rgba(34,197,94,.3)}
   .version-tag.milestone:hover{box-shadow:0 0 10px rgba(255,194,15,.4)}
   .version-tag.regression:hover{box-shadow:0 0 10px rgba(239,68,68,.3)}
 
-  /* \u2500\u2500 RESPONSIVE \u2500\u2500 */
+  /* ── RESPONSIVE ── */
   @media(max-width:1100px){
     .sidebar{transform:translateX(-100%)}
     .main{margin-left:0}
@@ -357,48 +357,48 @@
   <div class="sidebar-logo">
     <div class="badge">
       <div class="badge-dot"></div>
-      <span class="badge-text">WPM Gest\u00e3o Interna</span>
+      <span class="badge-text">WPM Gestão Interna</span>
     </div>
-    <h1>Documenta\u00e7\u00e3o<br>do Projeto</h1>
-    <p>Fase Browser-Only \u2014 v34 Final</p>
+    <h1>Documentação<br>do Projeto</h1>
+    <p>Fase Browser-Only — v34 Final</p>
   </div>
 
   <div class="nav-section">
-    <div class="nav-section-label">Vis\u00e3o Geral</div>
-    <a href="#origem" class="nav-item"><span class="nav-icon">\u25ce</span> Origem do Projeto</a>
-    <a href="#conceito" class="nav-item"><span class="nav-icon">\u25c8</span> Conceito e Objetivo</a>
-    <a href="#numeros" class="nav-item"><span class="nav-icon">\u25c9</span> N\u00fameros da Fase</a>
+    <div class="nav-section-label">Visão Geral</div>
+    <a href="#origem" class="nav-item"><span class="nav-icon">◎</span> Origem do Projeto</a>
+    <a href="#conceito" class="nav-item"><span class="nav-icon">◈</span> Conceito e Objetivo</a>
+    <a href="#numeros" class="nav-item"><span class="nav-icon">◉</span> Números da Fase</a>
   </div>
 
   <div class="nav-section">
     <div class="nav-section-label">Arquitetura</div>
-    <a href="#arquitetura" class="nav-item"><span class="nav-icon">\u2b21</span> Arquitetura de Camadas</a>
-    <a href="#stack" class="nav-item"><span class="nav-icon">\u2b22</span> Stack Tecnol\u00f3gico</a>
-    <a href="#modulos" class="nav-item"><span class="nav-icon">\u25c7</span> M\u00f3dulos do Sistema</a>
-    <a href="#persistencia" class="nav-item"><span class="nav-icon">\u25c8</span> Persist\u00eancia Dual</a>
-    <a href="#rendering" class="nav-item"><span class="nav-icon">\u25c9</span> Pipeline de Render</a>
-    <a href="#design" class="nav-item"><span class="nav-icon">\u25c7</span> Design System</a>
+    <a href="#arquitetura" class="nav-item"><span class="nav-icon">⬡</span> Arquitetura de Camadas</a>
+    <a href="#stack" class="nav-item"><span class="nav-icon">⬢</span> Stack Tecnológico</a>
+    <a href="#modulos" class="nav-item"><span class="nav-icon">◇</span> Módulos do Sistema</a>
+    <a href="#persistencia" class="nav-item"><span class="nav-icon">◈</span> Persistência Dual</a>
+    <a href="#rendering" class="nav-item"><span class="nav-icon">◉</span> Pipeline de Render</a>
+    <a href="#design" class="nav-item"><span class="nav-icon">◇</span> Design System</a>
   </div>
 
   <div class="nav-section">
-    <div class="nav-section-label">Evolu\u00e7\u00e3o</div>
-    <a href="#timeline" class="nav-item"><span class="nav-icon">\u25b7</span> Linha do Tempo</a>
-    <a href="#regressoes" class="nav-item"><span class="nav-icon">\u25b3</span> Regress\u00f5es e Crises</a>
-    <a href="#licoes" class="nav-item"><span class="nav-icon">\u25d1</span> Li\u00e7\u00f5es Aprendidas</a>
+    <div class="nav-section-label">Evolução</div>
+    <a href="#timeline" class="nav-item"><span class="nav-icon">▷</span> Linha do Tempo</a>
+    <a href="#regressoes" class="nav-item"><span class="nav-icon">△</span> Regressões e Crises</a>
+    <a href="#licoes" class="nav-item"><span class="nav-icon">◑</span> Lições Aprendidas</a>
   </div>
 
   <div class="nav-section">
     <div class="nav-section-label">Qualidade</div>
-    <a href="#seguranca" class="nav-item"><span class="nav-icon">\u25c6</span> Seguran\u00e7a</a>
-    <a href="#diagnosticos" class="nav-item"><span class="nav-icon">\u25e7</span> Diagn\u00f3sticos</a>
-    <a href="#regras" class="nav-item"><span class="nav-icon">\u25e7</span> Regras de Neg\u00f3cio</a>
-    <a href="#auditoria" class="nav-item"><span class="nav-icon">\u25e8</span> Auditoria v34</a>
+    <a href="#seguranca" class="nav-item"><span class="nav-icon">◆</span> Segurança</a>
+    <a href="#diagnosticos" class="nav-item"><span class="nav-icon">◧</span> Diagnósticos</a>
+    <a href="#regras" class="nav-item"><span class="nav-icon">◧</span> Regras de Negócio</a>
+    <a href="#auditoria" class="nav-item"><span class="nav-icon">◨</span> Auditoria v34</a>
   </div>
 
   <div class="nav-section">
     <div class="nav-section-label">Futuro</div>
-    <a href="#proxima" class="nav-item"><span class="nav-icon">\u25b6</span> Pr\u00f3xima Fase</a>
-    <a href="#metodologia" class="nav-item"><span class="nav-icon">\u25d0</span> Metodologia IA</a>
+    <a href="#proxima" class="nav-item"><span class="nav-icon">▶</span> Próxima Fase</a>
+    <a href="#metodologia" class="nav-item"><span class="nav-icon">◐</span> Metodologia IA</a>
   </div>
 </nav>
 
@@ -409,11 +409,11 @@
   <header class="hero">
     <canvas id="hero-canvas"></canvas>
     <div class="hero-eyebrow">
-      <span>\ud83d\udcc1</span> Documenta\u00e7\u00e3o T\u00e9cnica Oficial
+      <span>📁</span> Documentação Técnica Oficial
     </div>
-    <h1>WPM Gest\u00e3o Interna<br><span>Fase Browser-Only</span></h1>
+    <h1>WPM Gestão Interna<br><span>Fase Browser-Only</span></h1>
     <p class="hero-subtitle">
-      34 vers\u00f5es. Centenas de horas. Zero budget. Um recepcionista que transformou frustra\u00e7\u00e3o operacional em sistema \u2014 e documentou cada decis\u00e3o, cada regress\u00e3o, cada aprendizado. Avaliado com <strong style="color:var(--yellow)">9,5/10 por QA s\u00eanior</strong>. Este documento \u00e9 o registro completo dessa jornada.
+      34 versões. Centenas de horas. Zero budget. Um recepcionista que transformou frustração operacional em sistema — e documentou cada decisão, cada regressão, cada aprendizado. Avaliado com <strong style="color:var(--yellow)">9,5/10 por QA sênior</strong>. Este documento é o registro completo dessa jornada.
     </p>
     <div class="hero-meta">
       <div class="hero-meta-item">
@@ -421,8 +421,8 @@
         <span class="hero-meta-value">Wallace Phillip Maclayne</span>
       </div>
       <div class="hero-meta-item">
-        <span class="hero-meta-label">Vers\u00e3o Final</span>
-        <span class="hero-meta-value">v34 \u2014 WPM Gest\u00e3o Interna</span>
+        <span class="hero-meta-label">Versão Final</span>
+        <span class="hero-meta-value">v34 — WPM Gestão Interna</span>
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Arquitetura</span>
@@ -430,10 +430,10 @@
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Status</span>
-        <span class="hero-meta-value" style="color:var(--green)">\u2713 Fase Conclu\u00edda</span>
+        <span class="hero-meta-value" style="color:var(--green)">✓ Fase Concluída</span>
       </div>
       <div class="hero-meta-item">
-        <span class="hero-meta-label">Avalia\u00e7\u00e3o QA</span>
+        <span class="hero-meta-label">Avaliação QA</span>
         <span class="hero-meta-value" style="color:var(--yellow)">9,5 / 10</span>
       </div>
     </div>
@@ -445,7 +445,7 @@
     <!-- ORIGEM -->
     <section class="section" id="origem">
       <div class="section-header">
-        <div class="section-number">01 \u2014 Origem</div>
+        <div class="section-number">01 — Origem</div>
         <div class="section-title">De onde veio o projeto</div>
         <p class="section-desc">Como uma planilha de controle manual se tornou um sistema web completo rodando inteiramente no browser.</p>
       </div>
@@ -453,30 +453,30 @@
       <div class="grid-2" style="margin-bottom:32px">
         <div class="card card-accent">
           <h3>O Problema Original</h3>
-          <p>O controle operacional da recep\u00e7\u00e3o da unidade Smart Fit era feito de forma manual: planilhas, anota\u00e7\u00f5es em papel, WhatsApp para pend\u00eancias. Dados de alunos novos, vendas de addons, NPS e escala de trabalho n\u00e3o tinham uma fonte \u00fanica da verdade.</p>
-          <p>Cada recepcionista registrava informa\u00e7\u00f5es de forma diferente. Relat\u00f3rios mensais levavam horas para compilar. Pend\u00eancias se perdiam entre conversas.</p>
+          <p>O controle operacional da recepção da unidade Smart Fit era feito de forma manual: planilhas, anotações em papel, WhatsApp para pendências. Dados de alunos novos, vendas de addons, NPS e escala de trabalho não tinham uma fonte única da verdade.</p>
+          <p>Cada recepcionista registrava informações de forma diferente. Relatórios mensais levavam horas para compilar. Pendências se perdiam entre conversas.</p>
         </div>
         <div class="card">
-          <h3>A Decis\u00e3o</h3>
-          <p>A solu\u00e7\u00e3o foi criar um sistema digital pr\u00f3prio. A escolha de come\u00e7ar como um \u00fanico arquivo HTML foi deliberada: <strong>sem servidor, sem deploy, sem depend\u00eancias externas</strong>. Qualquer computador com um browser poderia abrir e usar imediatamente.</p>
-          <p>Isso eliminou a barreira de entrada e permitiu itera\u00e7\u00f5es r\u00e1pidas. O arquivo poderia ser passado por pen-drive, WhatsApp ou e-mail.</p>
+          <h3>A Decisão</h3>
+          <p>A solução foi criar um sistema digital próprio. A escolha de começar como um único arquivo HTML foi deliberada: <strong>sem servidor, sem deploy, sem dependências externas</strong>. Qualquer computador com um browser poderia abrir e usar imediatamente.</p>
+          <p>Isso eliminou a barreira de entrada e permitiu iterações rápidas. O arquivo poderia ser passado por pen-drive, WhatsApp ou e-mail.</p>
         </div>
       </div>
 
       <div class="card">
-        <h3>Escopo Inicial \u2014 O que precisava existir</h3>
+        <h3>Escopo Inicial — O que precisava existir</h3>
         <div class="grid-3" style="margin-top:16px">
           <div>
             <h4>Operacional</h4>
-            <p style="font-size:13px">Registro de alunos novos com atendente respons\u00e1vel, vendas de addons vinculadas aos atendimentos, controle de pend\u00eancias com status e respons\u00e1veis.</p>
+            <p style="font-size:13px">Registro de alunos novos com atendente responsável, vendas de addons vinculadas aos atendimentos, controle de pendências com status e responsáveis.</p>
           </div>
           <div>
-            <h4>Gest\u00e3o</h4>
-            <p style="font-size:13px">Dashboard executivo com m\u00e9tricas do m\u00eas, NPS com ranking de recepcionistas, escala de trabalho mensal com regras trabalhistas.</p>
+            <h4>Gestão</h4>
+            <p style="font-size:13px">Dashboard executivo com métricas do mês, NPS com ranking de recepcionistas, escala de trabalho mensal com regras trabalhistas.</p>
           </div>
           <div>
             <h4>Infraestrutura</h4>
-            <p style="font-size:13px">Segrega\u00e7\u00e3o por per\u00edodo mensal, exporta\u00e7\u00e3o e importa\u00e7\u00e3o de backups JSON, sistema de fechamento mensal que avan\u00e7a o per\u00edodo automaticamente.</p>
+            <p style="font-size:13px">Segregação por período mensal, exportação e importação de backups JSON, sistema de fechamento mensal que avança o período automaticamente.</p>
           </div>
         </div>
       </div>
@@ -485,15 +485,15 @@
     <!-- CONCEITO -->
     <section class="section" id="conceito">
       <div class="section-header">
-        <div class="section-number">02 \u2014 Conceito</div>
-        <div class="section-title">O que \u00e9 o sistema</div>
-        <p class="section-desc">WPM Gest\u00e3o Interna \u2014 um sistema operacional completo de gest\u00e3o de recep\u00e7\u00e3o rodando 100% no browser, sem backend.</p>
+        <div class="section-number">02 — Conceito</div>
+        <div class="section-title">O que é o sistema</div>
+        <p class="section-desc">WPM Gestão Interna — um sistema operacional completo de gestão de recepção rodando 100% no browser, sem backend.</p>
       </div>
 
       <div class="card" style="margin-bottom:24px">
-        <h3>Defini\u00e7\u00e3o T\u00e9cnica</h3>
-        <p>O sistema \u00e9 uma <strong>Single Page Application (SPA) single-file</strong> \u2014 um \u00fanico arquivo <code>.html</code> com todo o HTML, CSS e JavaScript embutidos (~11.500 linhas na v34). O estado \u00e9 armazenado em <strong>IndexedDB</strong> como backend prim\u00e1rio e <code>localStorage</code> como espelho de fallback, segregado por per\u00edodo no formato <code>YYYY-MM</code>. N\u00e3o h\u00e1 servidor, n\u00e3o h\u00e1 banco externo, n\u00e3o h\u00e1 login.</p>
-        <p>A arquitetura \u00e9 dividida em camadas expl\u00edcitas: <code>config \u2192 persist\u00eancia \u2192 schema \u2192 dom\u00ednio/seletores \u2192 renderiza\u00e7\u00e3o \u2192 UI/eventos \u2192 diagn\u00f3sticos</code>. Todo o contrato de atualiza\u00e7\u00e3o de estado \u00e9 expl\u00edcito: <strong>A\u00e7\u00e3o \u2192 Muta\u00e7\u00e3o \u2192 saveData() \u2192 requestRender()</strong>.</p>
+        <h3>Definição Técnica</h3>
+        <p>O sistema é uma <strong>Single Page Application (SPA) single-file</strong> — um único arquivo <code>.html</code> com todo o HTML, CSS e JavaScript embutidos (~11.500 linhas na v34). O estado é armazenado em <strong>IndexedDB</strong> como backend primário e <code>localStorage</code> como espelho de fallback, segregado por período no formato <code>YYYY-MM</code>. Não há servidor, não há banco externo, não há login.</p>
+        <p>A arquitetura é dividida em camadas explícitas: <code>config → persistência → schema → domínio/seletores → renderização → UI/eventos → diagnósticos</code>. Todo o contrato de atualização de estado é explícito: <strong>Ação → Mutação → saveData() → requestRender()</strong>.</p>
       </div>
 
       <div class="grid-2">
@@ -501,43 +501,43 @@
           <h3>Equipe Gerenciada</h3>
           <div style="margin-top:12px">
             <h4>Recepcionistas</h4>
-            <p style="font-size:13px">Wallace, Emilia, Gessica, Maickon \u2014 atendentes de alunos novos e hostess de pend\u00eancias.</p>
+            <p style="font-size:13px">Wallace, Emilia, Gessica, Maickon — atendentes de alunos novos e hostess de pendências.</p>
             <div class="divider"></div>
             <h4>Professores</h4>
-            <p style="font-size:13px">Charles, Phillipe, Junior, Samuel, Gabriel, Maicon, Saulo \u2014 aparecem na escala. <strong>Saulo n\u00e3o pode fazer abertura aos s\u00e1bados e feriados</strong> (restri\u00e7\u00e3o interjornada).</p>
+            <p style="font-size:13px">Charles, Phillipe, Junior, Samuel, Gabriel, Maicon, Saulo — aparecem na escala. <strong>Saulo não pode fazer abertura aos sábados e feriados</strong> (restrição interjornada).</p>
           </div>
         </div>
         <div class="card card-teal">
-          <h3>Per\u00edodos Mensais</h3>
-          <p style="font-size:13px; margin-top:8px">O sistema trata cada m\u00eas como uma unidade isolada. Dados de <code>2026-01</code> nunca vazam para <code>2026-02</code>. O sistema suporta navega\u00e7\u00e3o completa entre per\u00edodos hist\u00f3ricos com dados preservados.</p>
-          <p style="font-size:13px">Campos deriv\u00e1veis \u2014 como dia da semana a partir de uma data \u2014 nunca s\u00e3o salvos no storage. S\u00e3o calculados em tempo de execu\u00e7\u00e3o para economizar quota de armazenamento.</p>
+          <h3>Períodos Mensais</h3>
+          <p style="font-size:13px; margin-top:8px">O sistema trata cada mês como uma unidade isolada. Dados de <code>2026-01</code> nunca vazam para <code>2026-02</code>. O sistema suporta navegação completa entre períodos históricos com dados preservados.</p>
+          <p style="font-size:13px">Campos deriváveis — como dia da semana a partir de uma data — nunca são salvos no storage. São calculados em tempo de execução para economizar quota de armazenamento.</p>
         </div>
       </div>
     </section>
 
-    <!-- N\u00daMEROS -->
+    <!-- NÚMEROS -->
     <section class="section" id="numeros">
       <div class="section-header">
-        <div class="section-number">03 \u2014 N\u00fameros</div>
+        <div class="section-number">03 — Números</div>
         <div class="section-title">A escala da fase</div>
       </div>
 
       <div class="stat-grid">
         <div class="stat-item">
           <div class="stat-value">34</div>
-          <div class="stat-label">Vers\u00f5es Produzidas</div>
+          <div class="stat-label">Versões Produzidas</div>
         </div>
         <div class="stat-item">
           <div class="stat-value">11.5k</div>
-          <div class="stat-label">Linhas na Vers\u00e3o Final</div>
+          <div class="stat-label">Linhas na Versão Final</div>
         </div>
         <div class="stat-item">
           <div class="stat-value">8</div>
-          <div class="stat-label">M\u00f3dulos Completos</div>
+          <div class="stat-label">Módulos Completos</div>
         </div>
         <div class="stat-item">
           <div class="stat-value">9.5</div>
-          <div class="stat-label">Nota QA S\u00eanior (Gemini Pro)</div>
+          <div class="stat-label">Nota QA Sênior (Gemini Pro)</div>
         </div>
       </div>
 
@@ -556,7 +556,7 @@
         </div>
         <div class="card">
           <div class="stat-value" style="font-size:22px">30</div>
-          <div class="stat-label" style="font-size:11px">Alunos/m\u00eas Gerados (RNG seed)</div>
+          <div class="stat-label" style="font-size:11px">Alunos/mês Gerados (RNG seed)</div>
         </div>
       </div>
     </section>
@@ -564,9 +564,1129 @@
     <!-- ARQUITETURA -->
     <section class="section" id="arquitetura">
       <div class="section-header">
-        <div class="section-number">04 \u2014 Arquitetura</div>
+        <div class="section-number">04 — Arquitetura</div>
         <div class="section-title">Sistema de camadas</div>
-        <p class="section-desc">A separa\u00e7\u00e3o de responsabilidades n\u00e3o \u00e9 apenas conceitual \u2014 est\u00e1 formalizada no objeto <code>APP_INTERNALS</code>, que mapeia e exp\u00f5e todas as fun\u00e7\u00f5es p\u00fablicas de cada camada para diagn\u00f3stico e inspe\u00e7\u00e3o em console.</p>
+        <p class="section-desc">A separação de responsabilidades não é apenas conceitual — está formalizada no objeto <code>APP_INTERNALS</code>, que mapeia e expõe todas as funções públicas de cada camada para diagnóstico e inspeção em console.</p>
       </div>
 
-      <div class="grid-2" style="margin-bottom:28
+      <div class="grid-2" style="margin-bottom:28px">
+        <div class="card card-accent">
+          <h3>Fluxo de Dados</h3>
+          <p style="font-size:13px">O estado da aplicação é centralizado em duas variáveis: <code>storage</code> (store global com todos os períodos) e <code>state</code> (referência direta ao período ativo). Toda mutação passa por funções de ação que atualizam <code>state</code>, chamam <code>saveData()</code> e disparam <code>requestRender()</code> para as áreas afetadas.</p>
+          <p style="font-size:13px; margin:0">Não há setState reativo ou framework. O contrato de atualização é explícito, auditável e determinístico.</p>
+        </div>
+        <div class="card">
+          <h3>Inicialização em Etapas</h3>
+          <p style="font-size:13px">A inicialização é assíncrona e segue sequência rígida: (1) <code>hydrateStorageCache</code> — lê IDB + localStorage em paralelo; (2) <code>syncAppState</code> — normaliza o store; (3) bindings de UI; (4) <code>initializeForms</code>; (5) <code>renderInitialViews</code> + diagnósticos. Falhas mostram toast de erro sem travar a interface.</p>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-bottom:28px">
+        <div class="module-card">
+          <div class="module-icon">⚙️</div>
+          <div class="module-name">Config</div>
+          <div class="module-desc">Constantes globais, versões, defaults de negócio (APP_DEFAULTS, STORAGE_KEY, STORE_VERSION, APP_VERSION).</div>
+          <span class="module-tag">Camada 1</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">💾</div>
+          <div class="module-name">Persistência</div>
+          <div class="module-desc">CRUD sobre IDB/localStorage, cache Map, fila serializada de operações, broadcast cross-tab.</div>
+          <span class="module-tag">Camada 2</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🔧</div>
+          <div class="module-name">Schema</div>
+          <div class="module-desc">Normalização, migração, sanitização, versionamento de store, construção de períodos.</div>
+          <span class="module-tag">Camada 3</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📊</div>
+          <div class="module-name">Domínio / Seletores</div>
+          <div class="module-desc">Derivação de dados, cálculos, ranking, filtragem, memoização por assinatura de dados.</div>
+          <span class="module-tag">Camada 4</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🖥️</div>
+          <div class="module-name">Renderização</div>
+          <div class="module-desc">Geração de HTML, diff de strings, patch seletivo do DOM por ID, fila com coalescing.</div>
+          <span class="module-tag">Camada 5</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🎮</div>
+          <div class="module-name">UI / Eventos + Diagnósticos</div>
+          <div class="module-desc">Event delegation, modais, tabs, atalhos de teclado, smoke tests, auditoria de períodos.</div>
+          <span class="module-tag">Camadas 6–7</span>
+        </div>
+      </div>
+
+      <div class="card card-green">
+        <h3>APP_INTERNALS — Mapa Formal dos Módulos</h3>
+        <p style="font-size:13px">O objeto <code>Object.freeze(APP_INTERNALS)</code> expõe explicitamente, por categoria, todas as funções internas do sistema: <code>config</code>, <code>persistence</code>, <code>schema</code>, <code>domain</code>, <code>actions</code>, <code>rendering</code>, <code>ui</code> e <code>diagnostics</code>. Disponível em <code>window.__APP_INTERNALS__</code> para inspeção em DevTools sem necessidade de quebrar o arquivo.</p>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="section-header">
+        <div class="section-number">05 — Stack</div>
+        <div class="section-title">Tecnologias utilizadas</div>
+        <p class="section-desc">Zero build tools. Zero Node.js. Zero backend. Tudo nativo no browser — sem CDNs externas na v34, sem dependências de rede em runtime.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:28px">
+        <div>
+          <h4>Core — 100% Nativo</h4>
+          <div class="tech-pills" style="margin-top:10px">
+            <span class="tech-pill primary">Vanilla JavaScript</span>
+            <span class="tech-pill primary">HTML5</span>
+            <span class="tech-pill primary">CSS3</span>
+            <span class="tech-pill primary">IndexedDB API</span>
+            <span class="tech-pill primary">localStorage API</span>
+            <span class="tech-pill primary">Blob API</span>
+            <span class="tech-pill primary">FileReader API</span>
+            <span class="tech-pill primary">crypto.randomUUID()</span>
+            <span class="tech-pill primary">IntersectionObserver</span>
+            <span class="tech-pill primary">HTML5 Drag & Drop API</span>
+          </div>
+        </div>
+        <div>
+          <h4>Padrões de Engenharia</h4>
+          <div class="tech-pills" style="margin-top:10px">
+            <span class="tech-pill">Dual-Storage (IDB + LS)</span>
+            <span class="tech-pill">In-Memory Cache (Map)</span>
+            <span class="tech-pill">Serialized Write Queue</span>
+            <span class="tech-pill">Cross-Tab Broadcast</span>
+            <span class="tech-pill">HTML Diff Patch</span>
+            <span class="tech-pill">Memoized Selectors</span>
+            <span class="tech-pill">Seeded RNG</span>
+            <span class="tech-pill">Schema Migration</span>
+            <span class="tech-pill">Smoke Test Suite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card card-green">
+          <h3>Persistência Dual</h3>
+          <p style="font-size:13px"><strong>IndexedDB</strong> como backend primário (assíncrono, sem limite restritivo). <code>localStorage</code> como espelho síncrono e fallback. Cache <code>Map</code> em memória elimina leituras desnecessárias. Fila serializada via <code>queueStorageOperation</code> previne race conditions.</p>
+        </div>
+        <div class="card card-orange">
+          <h3>Renderização Eficiente</h3>
+          <p style="font-size:13px"><code>aplicarHtmlSeMudou()</code> compara string HTML nova com <code>innerHTML</code> atual antes de tocar o DOM. <code>aplicarPatchCards()</code> faz diff por ID em listas. <code>requestRender()</code> com fila de coalescing evita renders redundantes em cascata.</p>
+        </div>
+        <div class="card card-purple">
+          <h3>Seletores Memoizados</h3>
+          <p style="font-size:13px"><code>lerSelectorMemorizado()</code> armazena resultados indexados por <code>período + nome + assinatura JSON</code>. Cache com limite de 120 entradas antes de limpeza automática — evita memory leak em sessões longas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDULOS -->
+    <section class="section" id="modulos">
+      <div class="section-header">
+        <div class="section-number">06 — Módulos</div>
+        <div class="section-title">Os 8 módulos do sistema</div>
+        <p class="section-desc">Cada módulo tem lógica de domínio, seletor memoizado, formulário modal, render independente e re-render seletivo.</p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom:28px">
+        <div class="module-card">
+          <div class="module-icon">🎓</div>
+          <div class="module-name">Alunos (Students)</div>
+          <div class="module-desc">Tabela com 11 colunas. Busca accent-insensitive em tempo real. Filtros por atendente e feedback. Barra de resumo com 12 células agrupadas. Modal de cadastro/edição com validação.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">💊</div>
+          <div class="module-name">Addons</div>
+          <div class="module-desc">Grid diário por recepcionista × tipo de addon. Estrutura addons[pessoa][tipo][dia]. resizeMonth() ajusta arrays preservando dados existentes. Totais memoizados por assinatura.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📋</div>
+          <div class="module-name">Pendências (Kanban)</div>
+          <div class="module-desc">Kanban com 3 colunas e drag-and-drop nativo. Busca accent-insensitive por nome, matrícula, pendência e hostess. Status persistido. Dashboard mostra top 4 prioritários.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">⭐</div>
+          <div class="module-name">NPS</div>
+          <div class="module-desc">Score 0–100, metas mensal e semestral, observações com debounce de 800ms. Ranking com setas de tendência (↑↓) comparando com rankSnapshot anterior.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📅</div>
+          <div class="module-name">Escala</div>
+          <div class="module-desc">Controle por dia com recepcionista, swap de recepção e turnos de professores com flag de troca. Seletor memoizado computa dias cobertos, trocas e fins de semana.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🗓️</div>
+          <div class="module-name">Eventos</div>
+          <div class="module-desc">Lista (cards + tabela) + calendário mensal com pills de eventos por dia (máx 3 visíveis). Tipos: Ação, Campanha, Treinamento, Feriado, Evento. Filtros por tipo e status.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📊</div>
+          <div class="module-name">Dashboard</div>
+          <div class="module-desc">Indicadores derivados de todos os módulos via selecionarIndicadoresDashboard memoizado. KPIs de NPS, feedback, addons, próxima escala, próximo evento e pendências críticas.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🔧</div>
+          <div class="module-name">Configurações + Diagnósticos</div>
+          <div class="module-desc">Gestão de equipe, tipos de addon, auditoria de períodos, painel técnico de persistência, smoke tests, health bar e controles de export/import/reset.</div>
+          <span class="module-tag">Completo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSISTÊNCIA -->
+    <section class="section" id="persistencia">
+      <div class="section-header">
+        <div class="section-number">07 — Persistência</div>
+        <div class="section-title">Sistema de armazenamento dual</div>
+        <p class="section-desc">A camada de maior maturidade técnica do projeto. IndexedDB primário + localStorage espelho, mediados por cache em memória e fila serializada de escritas.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-green">
+          <h3>IndexedDB — Backend Primário</h3>
+          <p style="font-size:13px">Preferido por suportar valores maiores, não bloquear a thread principal e ser mais adequado para dados estruturados. A função <code>withIndexedDbStore()</code> abstrai transações com promise wrapper. Singleton de conexão com <code>idbOpenPromise</code> evita aberturas paralelas.</p>
+        </div>
+        <div class="card card-orange">
+          <h3>localStorage — Espelho e Fallback</h3>
+          <p style="font-size:13px">Mantido em sincronia após cada escrita no IDB. Garante compatibilidade com ambientes que bloqueiam IndexedDB, alimenta o <code>storage event</code> para broadcast cross-tab e serve como fallback imediato em leituras síncronas via <code>readStoredValue()</code>.</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-blue">
+          <h3>Fila Serializada — Race Conditions Eliminadas</h3>
+          <p style="font-size:13px">Toda escrita no backend passa por <code>queueStorageOperation()</code>, que enfileira operações assíncronas e as executa em sequência (nunca em paralelo). Previne corrupção silenciosa de dados em cenários de múltiplas escritas simultâneas — fonte recorrente de bugs em versões anteriores.</p>
+        </div>
+        <div class="card card-purple">
+          <h3>Broadcast Cross-Tab</h3>
+          <p style="font-size:13px">Escritas emitem payload JSON em <code>STORAGE_BROADCAST_KEY</code> via <code>storage event</code>. Outras abas consomem via <code>consumeStorageBroadcast()</code>, resincronizam com <code>syncAppState()</code> e re-renderizam — estado consistente entre múltiplas instâncias abertas do sistema.</p>
+        </div>
+      </div>
+
+      <div class="card card-teal">
+        <h3>Gerenciamento de Quota + Snapshot Local</h3>
+        <p style="font-size:13px">Toda operação de escrita trata <code>QuotaExceededError</code> explicitamente com toast orientativo. A interface de Configurações exibe uso estimado via <code>Blob.size</code> com barra de progresso e alerta acima de 80% dos 5MB estimados. Snapshot local salvo automaticamente a cada exportação, com timestamp exibido na health bar.</p>
+      </div>
+    </section>
+
+    <!-- PIPELINE DE RENDER -->
+    <section class="section" id="rendering">
+      <div class="section-header">
+        <div class="section-number">08 — Renderização</div>
+        <div class="section-title">Pipeline de render sem framework</div>
+        <p class="section-desc">Diff de strings HTML, patch por ID, memoização por assinatura e fila com coalescing — sem React, sem Virtual DOM, sem build tool.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-accent">
+          <h3>aplicarHtmlSeMudou — Diff de Strings</h3>
+          <p style="font-size:13px">Antes de tocar o DOM, a função compara a string HTML nova com o <code>innerHTML</code> atual do elemento. Se forem idênticos, o DOM não é modificado — zero reflow, zero repaint. Especialmente eficaz em views ativas sem dados novos desde o último render.</p>
+        </div>
+        <div class="card">
+          <h3>aplicarPatchCards / Linhas — Diff por ID</h3>
+          <p style="font-size:13px">Para listas de elementos (cards Kanban, linhas de tabela, cards de eventos), diff por ID: elementos existentes são atualizados só se o HTML mudou; novos são inseridos; removidos são eliminados. Preserva estado de foco e scroll sem recriar o DOM inteiro.</p>
+        </div>
+      </div>
+
+      <div class="card card-green">
+        <h3>requestRender — Fila com Coalescing</h3>
+        <p style="font-size:13px">A função <code>requestRender(areas)</code> enfileira áreas específicas (dashboard, students, addons, pending, nps, scale, events, settings, hero) sem renderizar imediatamente. O processo real acontece em microtask via <code>Promise.resolve()</code>, coalescendo múltiplas chamadas em um único ciclo — evita renders redundantes em cascata quando múltiplas ações ocorrem em sequência.</p>
+      </div>
+    </section>
+
+    <!-- DESIGN SYSTEM -->
+    <section class="section" id="design">
+      <div class="section-header">
+        <div class="section-number">09 — Design System</div>
+        <div class="section-title">Identidade visual e UX</div>
+        <p class="section-desc">Sistema de design CSS completo baseado em custom properties, com acessibilidade de teclado, ARIA completo e drag-and-drop nativo.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-accent">
+          <h3>Design System CSS</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">Custom Properties</strong>
+              <p style="font-size:12px;margin:0">--bg, --primary (#FFC20F), --danger, --ok, --warning com variantes soft/strong. Aplicadas consistentemente em botões, pills, cards e gradientes.</p>
+            </div>
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">Topbar Sticky com glassmorphism</strong>
+              <p style="font-size:12px;margin:0">backdrop-filter: blur(12px), z-index elevado, controles de período sempre visíveis durante scroll.</p>
+            </div>
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">Tipografia Montserrat/Inter</strong>
+              <p style="font-size:12px;margin:0">Fonte principal com fallback para system-ui. JetBrains Mono para valores numéricos e código.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Acessibilidade e Teclado</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">ARIA Completo</strong>
+              <p style="font-size:12px;margin:0">Tabs com role=tablist/tab, aria-selected, tabindex dinâmico. Modais com role=dialog, aria-modal, foco retornado ao elemento de origem ao fechar.</p>
+            </div>
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">Atalhos de Teclado</strong>
+              <p style="font-size:12px;margin:0">Setas ArrowLeft/Right + Home/End navegam entre abas. <code>/</code> foca busca da aba ativa. <code>Esc</code> fecha modal. Todos os botões com <code>type="button"</code> explícito.</p>
+            </div>
+            <div>
+              <strong style="font-size:13px;display:block;margin-bottom:3px">Drag and Drop Nativo</strong>
+              <p style="font-size:12px;margin:0">HTML5 D&D API no Kanban. Highlight visual da coluna de destino. Classe <code>dragging</code> com transform e opacity durante o arraste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson info">
+        <div class="lesson-title">Sidebar vs. Layout Convencional</div>
+        <p class="lesson-text">Uma falha de layout crítica foi descoberta ao usar <code>height:100vh; overflow:hidden</code> em contêineres. Isso criava scroll traps e gaps de conteúdo. O padrão correto adotado: <code>min-height:100vh</code> no contêiner da app, scroll natural do body e <code>position:sticky</code> para elementos fixos.</p>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="section-header">
+        <div class="section-number">10 — Evolução</div>
+        <div class="section-title">Linha do tempo completa</div>
+        <p class="section-desc">34 versões produzidas ao longo da fase browser-only, agrupadas em 4 fases técnicas distintas.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v1</span>
+            <span class="timeline-title">Base inicial</span>
+          </div>
+          <div class="timeline-desc">Conversão da planilha de controle para HTML. Dashboard, Alunos Novos, Addons, Pendências, localStorage e backup JSON. Primeira versão funcional.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v2–v3</span>
+            <span class="timeline-title">Refinamentos iniciais</span>
+          </div>
+          <div class="timeline-desc">Estabilização da base. Correções de layout e comportamento do localStorage. Sem artefatos preservados — reconstruídos nas versões seguintes.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v4</span>
+            <span class="timeline-title">Kanban robusto</span>
+          </div>
+          <div class="timeline-desc">Kanban de pendências com drag-and-drop, truncamento de textos longos, tooltip, rolagem suave, ESC para fechar modal e sincronização entre abas.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v5</span>
+            <span class="timeline-title">Lógica operacional</span>
+          </div>
+          <div class="timeline-desc">Metas de NPS, conexão automática addon-aluno, refinamento do dashboard com insights executivos.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-meta">
+            <span class="version-tag milestone">v6 ★</span>
+            <span class="timeline-title">Base de referência sólida</span>
+          </div>
+          <div class="timeline-desc">Dashboard executivo completo, persistência de aba/filtros e atalho "/". Tornou-se a base de rollback para quando v7 regrediu. Lição: versões estáveis devem ser marcadas antes de evoluções arriscadas.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot regression"></div>
+          <div class="timeline-meta">
+            <span class="version-tag regression">v7–v8</span>
+            <span class="timeline-title">REGRESSÃO — Camada fora do layout</span>
+          </div>
+          <div class="timeline-desc">Adição de faixa extra abaixo das abas gerou interface disfuncional. Primeira grande crise do projeto.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot recovery"></div>
+          <div class="timeline-meta">
+            <span class="version-tag recovery">v9</span>
+            <span class="timeline-title">Rollback consciente para v6</span>
+          </div>
+          <div class="timeline-desc">Decisão de retornar à v6 como base segura. Lição: rollback não é fracasso, é engenharia responsável.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v10–v11</span>
+            <span class="timeline-title">Gestão mensal + Escala e Eventos</span>
+          </div>
+          <div class="timeline-desc">Seletor de mês/ano, fechamento de período com backup JSON, aba de Escala visual e aba de Eventos/Ações. Cards executivos no dashboard.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v12–v17</span>
+            <span class="timeline-title">Escala visual, calendário, filtros avançados</span>
+          </div>
+          <div class="timeline-desc">Grade visual de escala com legendas coloridas. Calendário de eventos. Filtros avançados, busca, exportações CSV. Maturidade operacional crescente.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v18–v20</span>
+            <span class="timeline-title">Robustez incremental</span>
+          </div>
+          <div class="timeline-desc">Evoluções de funcionalidades e estabilidade. Fase de consolidação antes de mudanças de storage.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot regression"></div>
+          <div class="timeline-meta">
+            <span class="version-tag regression">v21</span>
+            <span class="timeline-title">REGRESSÃO SEVERA — Tela vazia</span>
+          </div>
+          <div class="timeline-desc">Migração de namespace de storage quebrou o estado. Sistema abria com tela completamente vazia sem mês ativo. Crise severa — usuário sem acesso a dados.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot recovery"></div>
+          <div class="timeline-meta">
+            <span class="version-tag recovery">v22</span>
+            <span class="timeline-title">Recuperação com namespace novo</span>
+          </div>
+          <div class="timeline-desc">Recuperação com namespace isolado de storage. Lição: migrations devem ter fallback automático e isolamento por versão.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v23–v26</span>
+            <span class="timeline-title">Seed determinístico + Hotfixes</span>
+          </div>
+          <div class="timeline-desc">Seed determinístico de 30 alunos, 20 pendências, 10 eventos por mês via RNG com seed. Hotfixes para storage isolado, sanitização de filtros e ajustes Kanban.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-meta">
+            <span class="version-tag milestone">v27–v28 ★</span>
+            <span class="timeline-title">Snapshot + Autotestes — Baseline</span>
+          </div>
+          <div class="timeline-desc">Snapshot local, backup com metadados, diagnóstico do sistema, autotestes na aba Configurações cobrindo fluxos críticos. Esta se torna a baseline funcional oficial.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot stable"></div>
+          <div class="timeline-meta">
+            <span class="version-tag stable">v29–v32</span>
+            <span class="timeline-title">Desenvolvimento paralelo Claude + GPT</span>
+          </div>
+          <div class="timeline-desc">Metodologia dual. Claude produz versões com foco em segurança (esc(), sanitizeDeep, safeLocalSet). GPT produz versões com foco em UX e lógica unificada de reset de período.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-meta">
+            <span class="version-tag milestone">v33 ★★</span>
+            <span class="timeline-title">Merge deliberado — Versão consolidada</span>
+          </div>
+          <div class="timeline-desc">Base v31 (Claude — arquitetura de segurança) + patches cirúrgicos v32 (GPT — reset de período unificado). Passou todos os critérios de validação. Aprovada para testes operacionais reais.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-meta">
+            <span class="version-tag milestone">v34 ★★★ FINAL</span>
+            <span class="timeline-title">Maturidade máxima da fase — IndexedDB + Diagnósticos</span>
+          </div>
+          <div class="timeline-desc">IndexedDB como backend primário, fila serializada de escritas (queueStorageOperation), broadcast cross-tab, APP_INTERNALS como mapa formal dos módulos, pipeline de render com diff + memoização completa. Avaliação externa Gemini Pro QA sênior: <strong>9,5/10</strong>. Fase browser-only concluída.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGRESSÕES -->
+    <section class="section" id="regressoes">
+      <div class="section-header">
+        <div class="section-number">11 — Crises</div>
+        <div class="section-title">Regressões e o que causou cada uma</div>
+        <p class="section-desc">Cada crise foi documentada e gerou uma regra de arquitetura permanente.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card card-red">
+          <h3>v7–v8 — Camada fora do layout</h3>
+          <div class="divider"></div>
+          <h4>O que aconteceu</h4>
+          <p style="font-size:13px">Adição de uma faixa extra de botões abaixo das abas foi implementada fora da malha principal de layout. Interface quebrada, sobreposição de elementos e scroll incorreto.</p>
+          <h4 style="margin-top:16px">Regra gerada</h4>
+          <p style="font-size:13px; margin:0">Expansões de layout devem ser testadas em todas as viewports. Componentes novos fora da malha têm custo alto de estabilidade.</p>
+        </div>
+        <div class="card card-red">
+          <h3>v21 — Tela vazia ao abrir</h3>
+          <div class="divider"></div>
+          <h4>O que aconteceu</h4>
+          <p style="font-size:13px">Mudança no namespace de storage quebrou silenciosamente o carregamento do estado. Aplicação abria sem mês ativo e sem dados — completamente inutilizável. Usuário em produção afetado.</p>
+          <h4 style="margin-top:16px">Regra gerada</h4>
+          <p style="font-size:13px; margin:0">Mudanças de storage precisam de fallback automático e migração com chaves legadas. <code>readStoredJsonWithFallback()</code> implementado como solução permanente.</p>
+        </div>
+        <div class="card card-orange">
+          <h3>v23–v24 — Dados de teste invisíveis</h3>
+          <div class="divider"></div>
+          <h4>O que aconteceu</h4>
+          <p style="font-size:13px">O localStorage reutilizava dados de versões anteriores. O seed determinístico gerava dados, mas com namespace da versão antiga — invisíveis na nova.</p>
+          <h4 style="margin-top:16px">Regra gerada</h4>
+          <p style="font-size:13px; margin:0">Namespace isolado por versão. RNG baseado na chave do período (<code>makeRng('wpm-YYYY-MM')</code>) garante reprodutibilidade e isolamento total.</p>
+        </div>
+        <div class="card card-orange">
+          <h3>v13–v17 — Degradação por patches iterativos</h3>
+          <div class="divider"></div>
+          <h4>O que aconteceu</h4>
+          <p style="font-size:13px">Aplicação sequencial de <code>str_replace</code> em arquivo de 5000+ linhas gerou funções duplicadas, CSS desconectado e bugs acumulados. Qualidade degradou progressivamente.</p>
+          <h4 style="margin-top:16px">Regra gerada</h4>
+          <p style="font-size:13px; margin:0">Patches iterativos em arquivos massivos são anti-padrão. Prefira reescrita atômica para mudanças estruturais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIÇÕES -->
+    <section class="section" id="licoes">
+      <div class="section-header">
+        <div class="section-number">12 — Lições</div>
+        <div class="section-title">O que o projeto ensinou</div>
+        <p class="section-desc">Aprendizados técnicos e de processo que guiarão a próxima fase do sistema.</p>
+      </div>
+
+      <div class="lesson danger">
+        <div class="lesson-title">Patches iterativos acumulam erros em arquivos grandes</div>
+        <p class="lesson-text">A degradação de v13 a v17 foi causada por múltiplos <code>str_replace</code> em um arquivo de 5000+ linhas. Cada patch introduzia pequenas inconsistências que se acumulavam. A solução é a reescrita atômica completa do arquivo quando há mudanças estruturais.</p>
+      </div>
+
+      <div class="lesson danger">
+        <div class="lesson-title">CSS não tipado é fonte constante de falhas de layout</div>
+        <p class="lesson-text">A tabela de alunos usava a classe <code>.pending-table</code> (projetada para 8 colunas) numa tabela de 11 colunas. O calendário tinha classes definidas em JS mas ausentes no stylesheet. Regra: cada componente precisa de CSS dedicado com definição explícita de colunas.</p>
+      </div>
+
+      <div class="lesson warning">
+        <div class="lesson-title">Nenhuma IA é incondicionalmente superior — metodologia dual é o padrão</div>
+        <p class="lesson-text">Claude tendeu a arquiteturas de segurança mais robustas (esc(), sanitizeDeep, safeLocalSet). GPT tendeu a fluxos UX mais coesos e lógica de reset unificada. Os melhores resultados vieram de merges deliberados com trilha de auditoria explícita.</p>
+      </div>
+
+      <div class="lesson success">
+        <div class="lesson-title">Rollback consciente é engenharia responsável</div>
+        <p class="lesson-text">A decisão de retornar à v6 quando v7–v8 falharam foi a decisão certa. Versões estáveis devem ser marcadas explicitamente antes de evoluções arriscadas. Rollback não é fracasso — é parte do processo de engenharia.</p>
+      </div>
+
+      <div class="lesson success">
+        <div class="lesson-title">Validação antes de entregar é inegociável</div>
+        <p class="lesson-text">O protocolo de validação da v34 — verificação de sintaxe JS, estrutura HTML, IDs/funções duplicadas, cobertura de esc(), autotestes de fluxo integrados — deve ser padrão em todas as entregas. Não existe "entrega rápida" sem validação.</p>
+      </div>
+
+      <div class="lesson info">
+        <div class="lesson-title">Race conditions em storage exigem fila serializada</div>
+        <p class="lesson-text">Múltiplas escritas assíncronas paralelas eram fonte de corrupção silenciosa de dados. A introdução de <code>queueStorageOperation()</code> na v34 eliminou definitivamente esse vetor de erro sem impacto visível de performance para o usuário.</p>
+      </div>
+    </section>
+
+    <!-- SEGURANÇA -->
+    <section class="section" id="seguranca">
+      <div class="section-header">
+        <div class="section-number">13 — Segurança</div>
+        <div class="section-title">Hardening do sistema</div>
+        <p class="section-desc">Sanitização em dois níveis independentes e complementares — na importação e na renderização.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-green">
+          <h3>Proteção XSS — Dois Níveis</h3>
+          <p style="font-size:13px"><strong>Nível 1 — Importação:</strong> <code>sanitizeDeep()</code> remove <code>&lt;</code> e <code>&gt;</code> recursivamente de todo o JSON importado antes de qualquer processamento. Dados maliciosos não entram no store mesmo que escapem da validação de schema.</p>
+          <p style="font-size:13px"><strong>Nível 2 — Renderização:</strong> toda string de dados exibida no DOM passa pela função <code>esc()</code>, que escapa entidades HTML críticas. Proteção independente do caminho de entrada dos dados.</p>
+        </div>
+        <div class="card card-green">
+          <h3>Normalização Defensiva</h3>
+          <p style="font-size:13px"><code>normalizeData()</code> é chamada em todo ponto de entrada de dados: inicialização, importação, troca de período e salvamento de configurações. Garante que arrays existam, propriedades obrigatórias tenham valores válidos e referências inconsistentes sejam corrigidas automaticamente.</p>
+          <p style="font-size:13px; margin:0">Nenhum dado bruto de usuário ou de import chega ao estado sem passar por normalização.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Sanitização de UIState</h3>
+          <p style="font-size:13px"><code>sanitizeUIState()</code> valida o estado de UI persistido contra conjuntos de valores permitidos (<code>validEventTypes</code>, <code>validEventStatuses</code>, <code>validTabs</code>). Tabs inválidas são resetadas para <code>dashboard</code>. Migração automática de nomes legados de tabs.</p>
+        </div>
+        <div class="card">
+          <h3>Proteção do Storage</h3>
+          <p style="font-size:13px">Todos os <code>setItem()</code> estão envolvidos em tratamento de <code>QuotaExceededError</code> via <code>persistStoredValue()</code>. Falhas de storage nunca ocorrem silenciosamente — o usuário recebe feedback claro com orientação de ação (exportar backup, limpar meses vazios).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAGNÓSTICOS -->
+    <section class="section" id="diagnosticos">
+      <div class="section-header">
+        <div class="section-number">14 — Diagnósticos</div>
+        <div class="section-title">Sistema de autotestes integrado</div>
+        <p class="section-desc">Uma suíte de diagnósticos embutida que seria incomum mesmo em aplicações com stack completa de produção.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-accent">
+          <h3>runSystemDiagnostics</h3>
+          <p style="font-size:13px">Verifica integridade do store: existência e validade de todos os campos obrigatórios, coerência entre período ativo e store, ausência de referências quebradas (alunos com atendentes não cadastrados, pendências sem status válido). Resultados exibidos com pill de status (ok/warn/danger) e salvos em <code>SYSTEM_REPORT_KEY</code>.</p>
+        </div>
+        <div class="card card-blue">
+          <h3>runFlowSmokeTests</h3>
+          <p style="font-size:13px">Suíte de smoke tests que simula fluxos completos — criação/edição/exclusão de alunos, troca de status de pendência, adição de eventos, troca de período e verificação de isolamento de dados. Opera sobre cópia do store para não contaminar dados reais. Resultados salvos em <code>FLOW_TEST_REPORT_KEY</code>.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card card-teal">
+          <h3>renderPeriodAudit</h3>
+          <p style="font-size:13px">Lista todos os períodos armazenados com métricas (alunos, pendências, eventos, escala, NPS, volume de addons) e status: <em>Vazio / Completo / Revisar</em>. Critério de "Completo": ≥30 alunos, ≥20 pendências, ≥10 eventos e escala &gt; 0.</p>
+        </div>
+        <div class="card card-purple">
+          <h3>renderPersistenceTechPanel</h3>
+          <p style="font-size:13px">Painel técnico em tempo real: modo de persistência ativo (IndexedDB ou localStorage), status da última operação, timestamp da última gravação, resultado do self-test de escrita/leitura, disponibilidade de broadcast cross-tab e versão do payload. Diagnóstico imediato sem abrir DevTools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGRAS DE NEGÓCIO -->
+    <section class="section" id="regras">
+      <div class="section-header">
+        <div class="section-number">15 — Regras de Negócio</div>
+        <div class="section-title">Regras invioláveis do sistema</div>
+        <p class="section-desc">Regras que não podem ser quebradas em nenhuma versão, presente ou futura do sistema.</p>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">1</div>
+        <div class="rule-content">
+          <div class="rule-title">Separação de roles — Recepcionistas vs. Professores</div>
+          <p class="rule-text">Alunos novos só podem ter um recepcionista como atendente. Pendências só aceitam recepcionistas como hostess. Professores só aparecem na escala. Esta regra reflete a hierarquia operacional real da unidade.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">2</div>
+        <div class="rule-content">
+          <div class="rule-title">Sincronização addon-aluno bidirecional</div>
+          <p class="rule-text">Ao cadastrar aluno com addon, a venda é criada no módulo de Addons. Ao editar, o addon é atualizado. Ao excluir, o addon é removido. Não pode existir addon órfão.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">3</div>
+        <div class="rule-content">
+          <div class="rule-title">Regra dos 7 Dias na Escala</div>
+          <p class="rule-text">Um funcionário não pode ser escalado no sábado E no domingo da mesma semana. Como trabalham de segunda a sexta (5 dias), trabalhar nos dois dias do fim de semana resultaria em 7 dias consecutivos — acima do limite legal de 6 dias.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">4</div>
+        <div class="rule-content">
+          <div class="rule-title">Restrição de Abertura — Saulo</div>
+          <p class="rule-text">Saulo não pode pegar turnos de abertura (prof1) aos sábados ou feriados por conta do descanso interjornada. A lógica retorna <code>false</code> para Saulo nestas situações. Esta restrição deve ser preservada em todas as versões futuras.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">5</div>
+        <div class="rule-content">
+          <div class="rule-title">Datas em formato ISO — Sem bugs de fuso horário</div>
+          <p class="rule-text">Todos os campos de data no storage usam <code>YYYY-MM-DD</code>. Nunca armazenar strings localizadas ou timestamps com timezone. Previne bugs de fuso horário onde uma data se torna o dia anterior ou posterior dependendo do browser.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">6</div>
+        <div class="rule-content">
+          <div class="rule-title">Segregação total por período</div>
+          <p class="rule-text">Dados do período <code>2026-03</code> nunca devem vazar para <code>2026-02</code> ou <code>2026-04</code>. Toda operação que lê ou escreve dados verifica o período ativo correto. Reset de mês limpa apenas o período selecionado, preservando apenas a configuração da equipe.</p>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <div class="rule-num">7</div>
+        <div class="rule-content">
+          <div class="rule-title">Nenhuma escrita de storage sem tratamento de quota</div>
+          <p class="rule-text">Toda operação de persistência passa por <code>persistStoredValue()</code> que trata <code>QuotaExceededError</code> explicitamente. Escrita direta via <code>localStorage.setItem()</code> sem tratamento é proibida arquiteturalmente na v34.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDITORIA V34 -->
+    <section class="section" id="auditoria">
+      <div class="section-header">
+        <div class="section-number">16 — Validação</div>
+        <div class="section-title">Auditoria da versão final v34</div>
+        <p class="section-desc">Critérios de validação obrigatórios, todos verificados antes da aprovação da versão final.</p>
+      </div>
+
+      <div class="card" style="padding:0; overflow:hidden">
+        <table class="audit-table">
+          <thead>
+            <tr>
+              <th style="width:220px">Critério</th>
+              <th>Ferramenta / Método</th>
+              <th style="width:220px">Resultado</th>
+              <th style="width:80px">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sintaxe JavaScript</td>
+              <td>node --check + inspeção manual</td>
+              <td style="color:var(--text)">Zero erros</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Estrutura HTML</td>
+              <td>Parser HTML — tags abertas/fechadas</td>
+              <td style="color:var(--text)">Zero tags não fechadas</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Funções duplicadas</td>
+              <td>grep + análise manual</td>
+              <td style="color:var(--text)">Zero duplicatas</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>IDs duplicados</td>
+              <td>grep + detecção automatizada</td>
+              <td style="color:var(--text)">Zero IDs duplicados</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Cobertura esc()</td>
+              <td>Auditoria de todos os innerHTML dinâmicos</td>
+              <td style="color:var(--text)">Todos os pontos cobertos</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>sanitizeDeep() na importação</td>
+              <td>Trace de fluxo de importData()</td>
+              <td style="color:var(--text)">Aplicado antes de qualquer merge</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Fila de storage (queueStorageOperation)</td>
+              <td>Code review + smoke test de escritas paralelas</td>
+              <td style="color:var(--text)">Toda escrita serializada</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>IndexedDB como primário</td>
+              <td>Trace de persistStoredValue()</td>
+              <td style="color:var(--text)">IDB precede localStorage em todas as escritas</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Broadcast cross-tab</td>
+              <td>Teste com 2 abas simultâneas</td>
+              <td style="color:var(--text)">Estado sincronizado entre abas</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Seletores memoizados</td>
+              <td>Inspeção de cacheSelectores Map</td>
+              <td style="color:var(--text)">Todos os seletores derivados memoizados</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>runFlowSmokeTests</td>
+              <td>Painel de Configurações → Autotestes</td>
+              <td style="color:var(--text)">Todos os fluxos CRUD aprovados</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>runSystemDiagnostics</td>
+              <td>Painel de Configurações → Diagnósticos</td>
+              <td style="color:var(--text)">Zero erros de integridade</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>APP_INTERNALS completo</td>
+              <td>window.__APP_INTERNALS__ em DevTools</td>
+              <td style="color:var(--text)">Todas as 8 camadas mapeadas</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>RNG seed determinístico</td>
+              <td>Geração de dados em 3 sessões independentes</td>
+              <td style="color:var(--text)">Dados idênticos por período em todas as sessões</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+            <tr>
+              <td>Reset de período</td>
+              <td>Teste funcional — reset + validação</td>
+              <td style="color:var(--text)">Preserva só equipe, zero dados residuais</td>
+              <td><span class="check-yes">✓ PASS</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="card card-green" style="text-align:center; padding:28px">
+          <div style="font-size:36px; font-weight:900; color:var(--green); font-family:'JetBrains Mono',monospace; margin-bottom:8px">15/15</div>
+          <div style="font-size:14px; font-weight:700; color:var(--text); margin-bottom:6px">Critérios de Validação Aprovados</div>
+          <div style="font-size:13px; color:var(--text-muted); margin-bottom:12px">v34 — WPM Gestão Interna aprovada como versão final da fase browser-only</div>
+          <div style="display:inline-flex;align-items:center;gap:10px;background:var(--yellow-dim);border:1px solid var(--yellow-glow);border-radius:8px;padding:10px 20px">
+            <span style="font-size:22px;font-weight:900;color:var(--yellow);font-family:'JetBrains Mono',monospace">9,5 / 10</span>
+            <span style="font-size:12px;color:var(--text-muted)">Avaliação Gemini Pro QA Sênior</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section class="section" id="metodologia">
+      <div class="section-header">
+        <div class="section-number">17 — Metodologia</div>
+        <div class="section-title">Desenvolvimento com IA dual</div>
+        <p class="section-desc">Uma abordagem diferenciada: desenvolvimento paralelo com Claude (Anthropic) e GPT (OpenAI), com merges deliberados e avaliação crítica bilateral.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div class="card card-blue">
+          <h3>Claude (Anthropic)</h3>
+          <h4 style="margin-top:12px">Pontos fortes identificados</h4>
+          <p style="font-size:13px">Arquitetura de segurança consistentemente mais robusta. Cobertura sistemática de <code>esc()</code> em todos os pontos de injeção. Implementação padronizada de <code>sanitizeDeep()</code>, camadas de persistência e diagnósticos integrados.</p>
+          <h4 style="margin-top:14px">Área de melhoria</h4>
+          <p style="font-size:13px; margin:0">Algumas escolhas de UX menos intuitivas. Padrão de reset de período com lógica mais fragmentada em versões anteriores.</p>
+        </div>
+        <div class="card card-purple">
+          <h3>GPT (OpenAI)</h3>
+          <h4 style="margin-top:12px">Pontos fortes identificados</h4>
+          <p style="font-size:13px">Fluxos UX mais coesos e intuitivos. Lógica unificada de reset de período com <code>buildCleanPeriod()</code> mais elegante. Menor fragmentação do estado de UI.</p>
+          <h4 style="margin-top:14px">Área de melhoria</h4>
+          <p style="font-size:13px; margin:0">Cobertura de segurança menos sistemática. Tendência a simplificar sanitização em favor de brevidade de código.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Como o merge foi feito na V33 → base para v34</h3>
+        <div class="grid-3" style="margin-top:16px">
+          <div>
+            <h4>Base: V31 (Claude)</h4>
+            <p style="font-size:13px">Toda a arquitetura de segurança — <code>esc()</code>, <code>sanitizeDeep()</code>, confirmações destrutivas, camadas de persistência. O esqueleto do sistema.</p>
+          </div>
+          <div>
+            <h4>Patches: V32 (GPT)</h4>
+            <p style="font-size:13px">Lógica unificada de <code>resetSelectedMonth()</code> e <code>closeCurrentMonth()</code> usando <code>buildCleanPeriod()</code>. Melhorias no fluxo de navegação entre períodos.</p>
+          </div>
+          <div>
+            <h4>V34 (Refinamento final)</h4>
+            <p style="font-size:13px">Evolução sobre o merge: IndexedDB dual, fila serializada, broadcast cross-tab, APP_INTERNALS, pipeline de render otimizado. Fase browser-only concluída.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson info" style="margin-top:24px">
+        <div class="lesson-title">Princípio da Avaliação Crítica Bilateral</div>
+        <p class="lesson-text">Maclayne avalia ambas as IAs criticamente e espera que cada IA faça o mesmo com a outra. Não existe "a IA certa". Existe a análise técnica do output de cada uma, identificação dos pontos fortes de cada versão, e a síntese deliberada na versão final. Esta metodologia produziu resultados consistentemente superiores às versões produzidas por uma única IA em isolamento.</p>
+      </div>
+    </section>
+
+    <!-- PRÓXIMA FASE -->
+    <section class="section" id="proxima">
+      <div class="section-header">
+        <div class="section-number">18 — Próxima Fase</div>
+        <div class="section-title">A evolução para full-stack</div>
+        <p class="section-desc">A fase browser-only foi o laboratório de regras de negócio. A próxima fase é a migração para arquitetura profissional com banco de dados, API e frontend componentizado.</p>
+      </div>
+
+      <div class="card card-accent" style="margin-bottom:28px">
+        <h3>Visão da Nova Arquitetura</h3>
+        <p>O sistema browser-only provou as regras de negócio em condições reais. Agora o objetivo é evoluir para uma arquitetura que suporte múltiplos usuários simultâneos, banco de dados relacional, autenticação, CI/CD e testes automatizados E2E.</p>
+        <p style="margin:0">O <code>v34.html</code> passa a ser a referência funcional oficial — jamais reescrito, mas lido como fonte da verdade de comportamento e regras de negócio.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom:24px">
+        <div>
+          <h4>Frontend</h4>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(59,130,246,0.1)">⚛</div>
+              <div class="stack-info">
+                <div class="stack-name">React + TypeScript + Vite</div>
+                <div class="stack-role">SPA componentizada, type-safe, hot reload</div>
+              </div>
+            </div>
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(20,184,166,0.1)">🎨</div>
+              <div class="stack-info">
+                <div class="stack-name">Tailwind CSS</div>
+                <div class="stack-role">Design system atomic, mesma paleta WPM</div>
+              </div>
+            </div>
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(167,139,250,0.1)">🔗</div>
+              <div class="stack-info">
+                <div class="stack-name">React Query / TanStack</div>
+                <div class="stack-role">Cache, sincronização e estado do servidor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Backend</h4>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(34,197,94,0.1)">⚡</div>
+              <div class="stack-info">
+                <div class="stack-name">Node.js + Fastify + TypeScript</div>
+                <div class="stack-role">API REST de alta performance, validação Zod</div>
+              </div>
+            </div>
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(99,102,241,0.1)">🐘</div>
+              <div class="stack-info">
+                <div class="stack-name">PostgreSQL + Prisma</div>
+                <div class="stack-role">Banco relacional, migrations, type-safe ORM</div>
+              </div>
+            </div>
+            <div class="stack-layer">
+              <div class="stack-icon" style="background:rgba(249,115,22,0.1)">🧪</div>
+              <div class="stack-info">
+                <div class="stack-name">Vitest + Playwright</div>
+                <div class="stack-role">Unit tests API + E2E dos fluxos críticos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Roadmap por Sprints</h3>
+        <div class="grid-3" style="margin-top:16px">
+          <div>
+            <h4>Sprint 0 — Fundação</h4>
+            <p style="font-size:13px">Monorepo, Docker PostgreSQL, TypeScript configurado, ESLint/Prettier, README de setup local.</p>
+          </div>
+          <div>
+            <h4>Sprint 1 — Modelagem</h4>
+            <p style="font-size:13px">Schema Prisma com todas as entidades, migrations, seed de funcionários fixos e 12 períodos mensais.</p>
+          </div>
+          <div>
+            <h4>Sprint 2 — API Backend</h4>
+            <p style="font-size:13px">Fastify com CRUD de todos os módulos, validação Zod, testes com 80% de cobertura.</p>
+          </div>
+          <div>
+            <h4>Sprint 3 — Frontend Base</h4>
+            <p style="font-size:13px">React + Vite, identidade WPM, 8 abas, seletor de período, Dashboard e Alunos end-to-end.</p>
+          </div>
+          <div>
+            <h4>Sprint 4 — Módulos Restantes</h4>
+            <p style="font-size:13px">NPS, Escala, Eventos, Addons, Configurações com backup/export/import. Gestão mensal completa.</p>
+          </div>
+          <div>
+            <h4>Sprint 5 — Deploy</h4>
+            <p style="font-size:13px">E2E com Playwright, CI GitHub Actions, deploy Vercel (web) + Railway (API) + Neon (banco).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson success" style="margin-top:24px">
+        <div class="lesson-title">O que o sistema browser-only validou para a próxima fase</div>
+        <p class="lesson-text">34 versões de operação real com a equipe. Todas as regras de negócio foram testadas e refinadas em condições reais. Os bugs encontrados geraram regras permanentes. A próxima fase não começa do zero — começa com um legado funcional sólido, documentado, auditado e avaliado com 9,5/10 por QA sênior.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="footer-brand">WPM Gestão Interna</div>
+      <div class="footer-credit">Desenvolvido por Wallace Phillip Maclayne · Smart Fit Recepção</div>
+      <div class="footer-credit" style="margin-top:3px">Documentação produzida com auxílio de Claude (Anthropic)</div>
+      <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap">
+        <a href="https://wpm-case-wallace.netlify.app" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:#111;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:12px 24px;border-radius:8px;text-decoration:none;transition:opacity .2s">→ Ver Estudo de Caso</a>
+        <a href="https://wpm-sistema-wallace.netlify.app" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--yellow);font-weight:600;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:12px 24px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,194,15,.3);transition:border-color .2s">⚙ Ver Sistema ao Vivo</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-version">WPM Gestão Interna v34 · Fase Browser-Only Concluída</div>
+      <div class="footer-date">Abril 2026 · Arquitetura: Monolito Client-Side · IndexedDB + localStorage</div>
+      <div class="footer-date" style="margin-top:4px; color:var(--yellow)">✓ Avaliado 9,5/10 · Pronto para evolução full-stack</div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+// ── CURSOR ──
+const dot = document.getElementById('cur-dot');
+const ring = document.getElementById('cur-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove', e => {
+  mx=e.clientX; my=e.clientY;
+  dot.style.left=mx+'px'; dot.style.top=my+'px';
+});
+(function animRing(){
+  rx+=(mx-rx)*.11; ry+=(my-ry)*.11;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a,button,.card,.module-card,.stat-item,.nav-item,.tech-pill,.stack-layer,.lesson,.version-tag').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('h'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('h'));
+});
+document.addEventListener('mousedown',()=>ring.classList.add('c'));
+document.addEventListener('mouseup',()=>ring.classList.remove('c'));
+
+// ── PROGRESS BAR ──
+const prog = document.getElementById('prog');
+const main = document.querySelector('.main');
+window.addEventListener('scroll', ()=>{
+  const max = main.scrollHeight - window.innerHeight;
+  const pct = Math.min(main.scrollTop / max * 100, 100) || 0;
+  prog.style.width = pct+'%';
+},{passive:true});
+main.addEventListener('scroll', ()=>{
+  const max = main.scrollHeight - main.clientHeight;
+  const pct = Math.min(main.scrollTop / max * 100, 100);
+  prog.style.width = pct+'%';
+},{passive:true});
+
+// ── SCROLL REVEAL ──
+const rvEls = document.querySelectorAll('.rv,.rv-l,.rv-s');
+const rvObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('on'); rvObs.unobserve(e.target); }
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+rvEls.forEach(el=>rvObs.observe(el));
+
+// ── CONTADORES ──
+function animCount(el, target, dur=1600){
+  const isNum = !isNaN(parseFloat(target.replace('>','')));
+  if(!isNum){el.textContent=target;return;}
+  const end = parseFloat(target.replace('>','').replace('k',''));
+  const isK = target.includes('k');
+  const prefix = target.startsWith('>') ? '>' : '';
+  let st=null;
+  (function step(ts){
+    if(!st) st=ts;
+    const p = Math.min((ts-st)/dur,1);
+    const ease = 1-Math.pow(1-p,4);
+    const val = ease*end;
+    el.textContent = prefix+(isK ? (val).toFixed(val<10?1:0)+'k' : Math.round(val));
+    if(p<1) requestAnimationFrame(step);
+  })(performance.now());
+}
+const cntObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const sv = e.target.querySelector('.stat-value');
+      if(sv&&!sv.dataset.c){ sv.dataset.c='1'; animCount(sv,sv.textContent.trim()); }
+      cntObs.unobserve(e.target);
+    }
+  });
+},{threshold:.5});
+document.querySelectorAll('.stat-item,.card:has(.stat-value)').forEach(el=>cntObs.observe(el));
+
+// ── CARD MOUSE GLOW ──
+document.querySelectorAll('.card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+    card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+  });
+});
+
+// ── PARTÍCULAS HERO ──
+const canvas = document.getElementById('hero-canvas');
+const ctx = canvas.getContext('2d');
+function resize(){ canvas.width=canvas.offsetWidth; canvas.height=canvas.offsetHeight; }
+resize(); window.addEventListener('resize',resize);
+const pts = Array.from({length:35},()=>({
+  x:Math.random()*canvas.width, y:Math.random()*canvas.height,
+  vy:Math.random()*.5+.15, vx:(Math.random()-.5)*.2,
+  r:Math.random()*1.2+.3, life:Math.random()*300, max:Math.random()*280+180,
+  op:0, mop:Math.random()*.35+.08
+}));
+(function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  pts.forEach(p=>{
+    p.life++; p.y-=p.vy; p.x+=p.vx;
+    const prog=p.life/p.max;
+    p.op=prog<.2?prog/.2*p.mop:prog>.8?(1-prog)/.2*p.mop:p.mop;
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(255,194,15,${p.op})`;
+    ctx.fill();
+    if(p.life>=p.max||p.y<-10){
+      Object.assign(p,{x:Math.random()*canvas.width,y:canvas.height+5,life:0,max:Math.random()*280+180,mop:Math.random()*.35+.08});
+    }
+  });
+  requestAnimationFrame(draw);
+})();
+
+// ── REVEAL AUTOMÁTICO ──
+document.querySelectorAll('.section-header').forEach(el=>el.classList.add('rv'));
+document.querySelectorAll('.card').forEach((el,i)=>{
+  el.classList.add('rv');
+  if(i%3===1) el.classList.add('d2');
+  if(i%3===2) el.classList.add('d3');
+});
+document.querySelectorAll('.module-card').forEach((el,i)=>{
+  el.classList.add('rv-s');
+  el.classList.add('d'+Math.min(i%4+1,6));
+});
+document.querySelectorAll('.stat-item').forEach((el,i)=>{
+  el.classList.add('rv-s');
+  el.classList.add('d'+Math.min(i+1,6));
+});
+document.querySelectorAll('.timeline-item').forEach((el,i)=>{
+  el.classList.add('rv-l');
+  el.classList.add('d'+Math.min((i%3)+1,3));
+});
+document.querySelectorAll('.lesson').forEach(el=>el.classList.add('rv'));
+document.querySelectorAll('.stack-layer').forEach((el,i)=>{
+  el.classList.add('rv');
+  el.classList.add('d'+Math.min(i%3+1,3));
+});
+document.querySelectorAll('.rule-block').forEach((el,i)=>{
+  el.classList.add('rv');
+  el.classList.add('d'+Math.min(i%4+1,4));
+});
+
+// Re-observar
+document.querySelectorAll('.rv:not(.on),.rv-l:not(.on),.rv-s:not(.on)').forEach(el=>rvObs.observe(el));
+
+// ── NAV ACTIVE ──
+const sections2 = document.querySelectorAll('.section[id]');
+const navItems = document.querySelectorAll('.nav-item');
+const obs2 = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      navItems.forEach(item=>{
+        item.classList.toggle('active', item.getAttribute('href')==='#'+id);
+      });
+    }
+  });
+},{threshold:.3,rootMargin:'-80px 0px -60% 0px'});
+sections2.forEach(s=>obs2.observe(s));
+</script>
+</body>
+</html>
